@@ -402,28 +402,46 @@ small {font-size: 0.75em;
 <!--[if ly IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <style>
-		article section figure{float: right;
-								margin-left: 15px;
-								margin-bottom: 15px;}
-		nav ul li a {border-right: 1px solid #ffffff}
-		nav ul li a:hover {background-color: #017acb}
+div#container
+	{background-image: url(circle-mix.png);
+	background-repeat: no-repeat;
+	background-position: 15px 420px}
+article header
+	{-ms-filter: "progid:DXImageTransform.Microsoft.
+	Shadow(color='#cccccc',Direction=180,Strenght=2)";
+	background-color: #ffffff}
+
+article section figure {float: right;
+						marin-left: 15px;
+						margin-bottom: 15px}
 </style>
 <![endif]-->
 <!--[if lt IE 10]>
 <style>
-	article section
-		{filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#dfdfdf');
+nav ul
+	{filter: progid:DXImageTransform.Microsoft.gra
+	dient(GradientType=0,stratColorstr='#777777',
+	endColorstr='#333333');
 
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#dfdfdf')"}
-	nav ul
-		{filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#777777',endColorstr='#333333');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gra
+	dient(GradientType=0,stratColorstr='#777777',
+	endColorstr='#333333')"}
 
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#777777',endColorstr='#333333')"}
-</style>
+article section
+	{filter: progid:DXImageTransform.Microsoft.gra
+	dient(GradientType=0,startColorstr'#ffffff',
+	endColorstr='#dfdfdf');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.gra
+	dient(GradientType=0,startColorstr'#ffffff',
+	endColorstr='#dfdfdf')"}
+	</style>
+<![endif]-->
 <!--[if lt IE 8]>
 <style>
-	article section {width: 250px}
-	article section  figure {margin-left: 0}
+article section {width: 250px}
+
+article section figure {margin-left:0}
 </style>
 <![endif]-->
 </head>
