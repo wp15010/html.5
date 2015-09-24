@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Gangsta Zone - お問い合わせ</title>
+<title>Gangsta Zone - 川の流れの風景</title>
 <meta name="Vieport" content="width=device-width">
 
 
@@ -64,6 +64,8 @@ nav ul {font-size: 10px}
 
 nav ul li a {width: 100px}
 
+video {width: 480px;
+	height: 270px}
 }
 
 /*===== スマートフォン用の設定 =====*/
@@ -105,6 +107,9 @@ article section:nth-of-type(1n) figure
 article section:nth-of-type(1n)figcaption
 					{text-align: center;
 					margin-bottom: 15px}
+
+video {width: 280px;
+	height: 157px}
 				}
 
 
@@ -138,13 +143,13 @@ box-shadow: 10px 10px 10px #666666;}
 
 header#pageheader h1 	{margin: 0;
 	float: left;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: normal;
 	font-family: 'Lobster', cursive}
 
 header#pageheader h2 {
 	float: right;
-	font-size: 20px;
+	font-size: 10px
 }
 
 header#pageheader p	{color: #666666;
@@ -294,35 +299,10 @@ article section:nth-of-type(even) figure	{float: left;
 	article section:nth-of-type(odd) figcaption{
 		text-align: right;}
 
-/* フォーム */
-form {max-width: 500px;
-	margin: 30px auto}
+/* ビデオ */
+article {text-align: center;
+		margin: 30px 0 100px}
 
-input,textarea {width: 100%;
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			border: solid 1px #aaaaaa;
-			border-radius: 0;
-			-webkit-appearance: none
-			}
-
-textarea {height: 110px}
-
-input[type="submit"] {width: 200px;
-				background-color: #cef178}
-
-input:required,input:invalid
-			 {background-image: url(caution.png);
-			background-repeat: no-repeat;
-			background-position: right center}
-
-input:valid {background-image: none}
-
-label span {color: #ff0000}
-
-input:focus {
-	outline: solid 3px rgba(159,256,16,0.5);}
 
 /*
 a	{color: #017acd}
@@ -428,7 +408,11 @@ small {font-size: 0.75em;
 <!-- ヘッダー -->
 <header id="pageheader">
 <hgroup>
-<h1>Gangsta Zone</h1>
+<h1>
+<svg width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14" cy="14" r="14" fill="#880000" />
+</svg>
+Gangsta Zone</h1>
 <h2>生活を楽しくする情報をもっと身近にお届けします</h2>
 </hgroup>
 
@@ -443,52 +427,21 @@ small {font-size: 0.75em;
 </ul>
 </nav>
 
-<img src="header.jpg" alt="雲" height="300" width="900">
 
+</header>
 <!-- コンテンツ -->
 <article>
-<header>
-<h1>お問い合わせ</h1>
 
-<p id="summary">ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森の工房やイベントに関するご質問などもお気軽にお寄せください。<br />
-（※送信後はトップページに戻ります。）</p>
-</header>
+<h1>川の流れの風景</h1>
 
-<form action="https://www.rescuesolutions.net/form/mail.cgi" method="POST">
-<input type="hidden" name="_uid" value="XXXXXXXX" />
-<input type="hidden" name="_done" value="http://www.www.www/" />
-<input type="hidden" name="_subject" value="FORM MAIL" />
+<video width="640" height="360" controls
+poster="video.jpg" autoplay>
+<source src="sample.mp4" type="video/mp4">
+<source src="sample.webm" type="video/webm">
 
-<p><label>名前<span>(必須）</span>:<br>
-<input type="text" name="namae" size="40" required
-placeholder="名前を入力してください"autofocus>
-</label>
-</p>
-
-<p><label>メールアドレス<span>（必須）</span>:<br>
-<input type="email" name="mail" size="40" required
-placeholder="メールアドレスを入力してください">
-</label>
-</p>
-
-<p><label>URL:<br>
-<input type="url" name="url" size="40"
-placeholder="ホームページのURLを入力してください">
-</label>
-</p>
-
-<p><label>コメント：<br>
-<textarea name="comment" cols="50" rows="8"
-placeholder="コメントを入力してください">
-</textarea>
-</label>
-</p>
-
-<p id="button">
-<input type="submit" value="送信">
-</p>
-
-</form>
+<p>川の流れの風景を撮影した画像です。<br>
+<a href="sample.mp4">sample.mp4</a></p>
+</video>
 
 </article>
 
