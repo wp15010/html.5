@@ -402,6 +402,7 @@ small {font-size: 0.75em;
 <!--[if ly IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <style>
+
 div#container
 	{background-image: url(circle-mix.png);
 	background-repeat: no-repeat;
@@ -414,6 +415,43 @@ article header
 article section figure {float: right;
 						marin-left: 15px;
 						margin-bottom: 15px}
+
+nav ul li a {border-right: solid 1px #ffffff}
+
+nav ul li a:hover {background-color: #017acd}
+
+/* ３段組み */
+article div[itemprop="articleBody"]
+			{display: -webkit-box;
+			display: -mos-box;
+			display: -ms-dox}
+
+article section {width: 288px;
+				margin-right: 18px;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-mos-box-sizing: border-box;
+				overflow: visible}
+
+article section h1 {height: 48px;
+					line-height: 1.2}
+
+article section:nth-of-type(1n) figure
+				{float: none;
+				margin: 0}
+
+article section:nth-of-type(1n) figcaption
+				{text-align: center;
+				margin-bottom: 15px}
+
+/* ３段組み　IE8~9 ＆　Opere */
+article section {clear: none;
+				float: left;
+				position:relative}
+
+article section + section + section
+				{margin-right: 0}
+
 </style>
 <![endif]-->
 <!--[if lt IE 10]>
